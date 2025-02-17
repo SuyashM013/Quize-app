@@ -31,20 +31,10 @@ function App() {
     );
 
     setQuestion(data.results);
-    console.log(data.results) //-------------------------
+    // console.log(data.results) //-------------------------
   };
 
-  // const trythis = async () => {
-  //   const {data} = await axios.get('https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple')
-
-  //   console.log(data.results)
-  // }
-
-  useEffect(() => {
-    //  trythis(),
-    //  fetchQuestions()
-
-  }, [])
+  
 
 
   return (
