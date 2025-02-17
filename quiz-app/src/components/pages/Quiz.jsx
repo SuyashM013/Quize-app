@@ -1,6 +1,6 @@
 import { Button, CircularProgress } from '@mui/material';
 import React, { useEffect, useState } from 'react'
-import Question from "../Question"
+
 import ErrorMessage from '../ErrorMessage';
 import { useNavigate } from 'react-router-dom'
 
@@ -73,7 +73,7 @@ function Quiz({ name, score, question, setQuestion, setScore }) {
 
   return (
     <div>
-      <h1 className='text-3xl text-center mt-5  border-black py-1 w-auto underline rounded-lg'>Welcome {name}</h1>
+      <h1 className='text-5xl exo-2-font text-center mt-5  border-black py-1 w-auto  rounded-lg'>Welcome {name}</h1>
 
       {question ? (
         <div className='flex flex-col items-center'>
@@ -89,11 +89,11 @@ function Quiz({ name, score, question, setQuestion, setScore }) {
             <div>
               <h2 className='text-4xl text-center m-5'>Question {currques + 1} </h2>
 
-              <div className='border-4 border-black m-3'>
+              <div className='border-4 border-black m-3 backdrop-blur-sm'>
 
                 <h3 className='text-xl p-5'> {question[currques].question}</h3>
 
-                <div className='flex flex-col md:flex-row justify-evenly gap-3 w-[80%] m-auto'>
+                <div className='flex flex-col md:flex-row justify-evenly lg:flex-col gap-3 w-[80%] m-auto'>
                   {error && <ErrorMessage />}
                   {
                     options && options.map((i) => (

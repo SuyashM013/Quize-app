@@ -57,36 +57,21 @@ function App() {
         <Routes>
 
           <Route path="/"
-            element={<Home 
+            element={<Home
               name={name}
               setName={setName}
               fetchQuestions={fetchQuestions} />} />
-          <Route path="/quiz" 
-          element={<Quiz 
-          name={name}
-          question = {question}
-          score = {score}
-          setScore = {setScore}
-          setQuestion = {setQuestion} />} />
-          <Route path="/result" element={<Result name={name} score={score}/>} />
+          <Route path="/quiz"
+            element={<Quiz
+              name={name}
+              question={question}
+              score={score}
+              setScore={setScore}
+              setQuestion={setQuestion} />} />
+          <Route path="/result" element={<Result name={name} score={score} />} />
 
 
         </Routes>
-
-
-        {/* <button onClick={() => darkModeHandler()}>
-          {
-
-            dark && <IoIosSunny /> // render sunny when dark is true
-          }
-          {
-            !dark && <FaMoon /> // render moon when dark is false
-          }
-        </button> */}
-
-
-
-
       </div>
       <Footer />
     </BrowserRouter>

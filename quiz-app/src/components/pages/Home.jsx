@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 import back1 from '../../assets/quiz.svg'
 // import { TextField } from '@material-ui/core'
 import Button from '@mui/material/Button';
@@ -34,7 +33,7 @@ function Home({ name, setName, fetchQuestions }) {
 
     return (
         <div className=' p-2 text-center'>
-            {/* <Link to='/'></Link> */}
+       
 
             <div className='montserrat-font flex flex-col items-center justify-center lg:flex-row-reverse lg:justify-around  lg:items-center'>
 
@@ -52,7 +51,6 @@ function Home({ name, setName, fetchQuestions }) {
                         className='w-full md:w-1/2 backdrop-blur-md  mb-5'
                         label="Enter Your Name"
                         variant="outlined"
-                        // value={name}
                         onChange={(e) => setName(e.target.value)}
                     />
 
