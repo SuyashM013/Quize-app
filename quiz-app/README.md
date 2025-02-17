@@ -1,6 +1,6 @@
 # Quiz App 🧠🎯
 
-<!-- A React-based Quiz App built using Material UI and Trivia API. Users can select from various categories, choose difficulty levels (Easy, Medium, Hard), and answer 10 questions per quiz session. -->
+
 
 A fun and interactive Quiz App built using **React** and **Material UI**, powered by the **Trivia API**. Users can test their knowledge by selecting a category, choosing a difficulty level, and answering 10 randomly generated questions.
 
