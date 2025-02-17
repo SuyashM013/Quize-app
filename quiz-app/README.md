@@ -50,8 +50,7 @@ A fun and interactive Quiz App built using **React** and **Material UI**, powere
 
 - **Trivia API**: The app fetches quiz questions from [Trivia API](https://the-trivia-api.com/)
 - **API**: The API i used -  ```
- https://opentdb.com/api.php?amount=10${category && `&category=${category}`
-      }${difficulty && `&difficulty=${difficulty}`}&type=multiple ```
+ https://opentdb.com/api.php?amount=10${category && `&category=${category}`}${difficulty && `&difficulty=${difficulty}`}&type=multiple ```
 
 ## Contributing
 
