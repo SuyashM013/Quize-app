@@ -28,3 +28,12 @@ a{
     
    
 }
+
+.select{
+    background-color: greenyellow;
+    box-shadow: 1px 1px 2px black;
+}
+.wrong{
+    background-color: rgb(255, 50, 47);
+    box-shadow: 1px 1px 2px black;
+}

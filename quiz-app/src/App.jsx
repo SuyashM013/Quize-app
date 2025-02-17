@@ -30,7 +30,7 @@ function App() {
       }${difficulty && `&difficulty=${difficulty}`}&type=multiple`
     );
 
-    setQuestions(data.results);
+    setQuestion(data.results);
     console.log(data.results) //-------------------------
   };
 
@@ -67,8 +67,8 @@ function App() {
           question = {question}
           score = {score}
           setScore = {setScore}
-          setQuestions = {setQuestions} />} />
-          <Route path="/result" element={<Result />} />
+          setQuestion = {setQuestion} />} />
+          <Route path="/result" element={<Result name={name} score={score}/>} />
 
 
         </Routes>
